@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "current_feature": "skeleton",
+  "features": [
+    {
+      "id": "skeleton",
+      "title": "FastAPI + React Skeleton",
+      "status": "done",
+      "acceptance": [
+        "FastAPI server runs with a health endpoint returning 200 OK",
+        "React UI loads and displays a greeting message"
+      ],
+      "implementation": [
+        "backend/app.py",
+        "frontend/src/App.tsx"
+      ],
+      "tests": [
+        "backend/test_app.py",
+        "frontend/test/build.test.js"
+      ]
+    },
+    {
+      "id": "basic_reverse",
+      "title": "Basic Reverse Operation",
+      "status": "done",
+      "acceptance": [
+        "/reverse endpoint accepts GET parameter 'text' and returns reversed text",
+        "React UI includes a form to call /reverse and display result"
+      ],
+      "implementation": [
+        "backend/app.py",
+        "frontend/src/App.tsx"
+      ],
+      "tests": [
+        "backend/test_app.py"
+      ]
+    }
+  ]
+}

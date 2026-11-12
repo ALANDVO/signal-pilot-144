@@ -4,21 +4,16 @@ Each round completes one feature or repair. Future items are planned, not implem
 
 ## Current round
 
-skeleton
+continue-implementation
 
 ## Roadmap
 
-### skeleton — FastAPI + React Skeleton
+### continue-implementation — Continue implementation and resolve known failures
 
-Status: done
+Status: in_progress
 
 Acceptance:
-- FastAPI server runs with a health endpoint returning 200 OK
-- React UI loads and displays a greeting message
-
-Implementation: `backend/app.py`, `frontend/src/App.tsx`
-
-Tests: `backend/test_app.py`, `frontend/test/build.test.js`
+- Run checks, fix failures, and implement the next planned feature
 
 ---
 

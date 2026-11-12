@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from starlette.responses import JSONResponse
 
 app = FastAPI(title='signal-pilot-144', description='Reverse engineering agent API')
@@ -12,6 +12,11 @@ def health():
 def agent():
     '''Agent stub for reverse engineering tasks.'''
     return JSONResponse({'message': 'Agent ready'})
+
+@app.get('/reverse')
+def reverse(text: str = Query("", description="Text to reverse")):
+    '''Reverse the provided text.'''
+    return JSONResponse({'reversed': text[::-1]})
 
 if __name__ == '__main__':
     import uvicorn
