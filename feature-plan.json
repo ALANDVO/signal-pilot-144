@@ -1,1 +1,16 @@
-{"schema_version": 1, "current_feature": "skeleton", "features": [{"id": "skeleton", "title": "FastAPI + React Skeleton", "status": "done", "acceptance": ["FastAPI server runs with a health endpoint returning 200 OK", "React UI loads and displays a greeting message"], "implementation": ["backend/app.py", "frontend/src/App.tsx"], "tests": ["backend/test_app.py", "frontend/test/build.test.js"]}]}
+{
+  "schema_version": 1,
+  "current_feature": "continue-implementation",
+  "features": [
+    {
+      "id": "continue-implementation",
+      "title": "Continue implementation and resolve known failures",
+      "status": "in_progress",
+      "acceptance": [
+        "Run checks, fix failures, and implement the next planned feature"
+      ],
+      "implementation": [],
+      "tests": []
+    }
+  ]
+}

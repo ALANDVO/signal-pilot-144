@@ -1,4 +1,4 @@
-# signal-pilot-144
+# signal-pilot-144 — Alan Vo
 
 > Work in progress. This checkpoint may be incomplete or fail tests. See PLAN.md and STATUS.md before use.
 
@@ -10,6 +10,7 @@
 
 - **FastAPI Backend**: Provides health and agent endpoints for reverse engineering tasks.
 - **React Frontend**: Simple UI to interact with the backend and visualize results.
+- **Basic Reverse**: Simple reverse endpoint that accepts a text string and returns the reversed text.
 
 ## Installation
 
@@ -56,6 +57,7 @@
 
 - Use the UI to trigger reverse engineering agents.
 - View results and logs in the browser.
+- Use the Basic Reverse feature to transform text strings.
 
 ## Contact
 
