@@ -14,8 +14,8 @@ def agent():
     return JSONResponse({'message': 'Agent ready'})
 
 @app.get('/reverse')
-def reverse(text: str = Query("", description="Text to reverse")):
-    '''Reverse the provided text.'''
+def reverse(text: str = Query("", description="Text to reverse", max_length=1000)):
+    '''Reverse the provided text (up to 1000 characters).'''
     return JSONResponse({'reversed': text[::-1]})
 
 if __name__ == '__main__':

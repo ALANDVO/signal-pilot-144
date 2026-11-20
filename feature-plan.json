@@ -9,8 +9,12 @@
       "acceptance": [
         "Run checks, fix failures, and implement the next planned feature"
       ],
-      "implementation": [],
-      "tests": []
+      "implementation": [
+        "Added max_length=1000 validation to /reverse endpoint in backend/app.py"
+      ],
+      "tests": [
+        "backend/test_app.py - existing tests pass with max_length parameter"
+      ]
     }
   ]
 }
